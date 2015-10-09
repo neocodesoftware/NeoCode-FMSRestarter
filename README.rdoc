@@ -1,19 +1,20 @@
- _    _      _      _________  ___ _____    ___      _           _        ______          _             _
-| |  | |    | |     |  ___|  \/  |/  ___|  / _ \    | |         (_)       | ___ \        | |           | |
-| |  | | ___| |__   | |_  | .  . |\ `--.  / /_\ \ __| |_ __ ___  _ _ __   | |_/ /___  ___| |_ __ _ _ __| |_ ___ _ __
-| |/\| |/ _ \ '_ \  |  _| | |\/| | `--. \ |  _  |/ _` | '_ ` _ \| | '_ \  |    // _ \/ __| __/ _` | '__| __/ _ \ '__|
-\  /\  /  __/ |_) | | |   | |  | |/\__/ / | | | | (_| | | | | | | | | | | | |\ \  __/\__ \ || (_| | |  | ||  __/ |
- \/  \/ \___|_.__/  \_|   \_|  |_/\____/  \_| |_/\__,_|_| |_| |_|_|_| |_| \_| \_\___||___/\__\__,_|_|   \__\___|_|
+  _    _      _      _________  ___ _____    ___      _           _        ______          _             _
+ | |  | |    | |     |  ___|  \/  |/  ___|  / _ \    | |         (_)       | ___ \        | |           | |
+ | |  | | ___| |__   | |_  | .  . |\ `--.  / /_\ \ __| |_ __ ___  _ _ __   | |_/ /___  ___| |_ __ _ _ __| |_ ___ _ __
+ | |/\| |/ _ \ '_ \  |  _| | |\/| | `--. \ |  _  |/ _` | '_ ` _ \| | '_ \  |    // _ \/ __| __/ _` | '__| __/ _ \ '__|
+ \  /\  /  __/ |_) | | |   | |  | |/\__/ / | | | | (_| | | | | | | | | | | | |\ \  __/\__ \ || (_| | |  | ||  __/ |
+  \/  \/ \___|_.__/  \_|   \_|  |_/\____/  \_| |_/\__,_|_| |_| |_|_|_| |_| \_| \_\___||___/\__\__,_|_|   \__\___|_|
 
+ 
 == web-far
 Web FMS Admin Restarter. FileMaker Server restarting web tool
  
-== Requirements ==
+== Requirements
     PHP
     Web Server
     FileMaker admin console
 
-== Installation ==
+== Installation
 
 Download fmsrestarter.zip and unzip it in the root folder of your Web server.
 Configure your web server, here is an example for apache:
@@ -41,7 +42,7 @@ Configure your web server, here is an example for apache:
 * Make sure the log and stat directories have read/write permissions for the web server user
 
 
-== Configuration ==
+== Configuration
 
 1. Create MD5 checksum of your FM Server admin console login/password
 Access index.php?act=checksum  with a webbrowser and enter your FM Server admin console login/password to generate the checksum
@@ -85,5 +86,5 @@ Example for Windows:
 ; Windows version with "start /b " to start an application without opening a new Command Prompt window.
  exec_cmd = "start /b php restart.php PARAMETERS"
 
-== Run It ==
+== Run It
 Now you can open index.php, enter your FileMaker admin console login/password and restart server or disconnect clients.
