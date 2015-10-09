@@ -45,7 +45,7 @@ Configure your web server, here is an example for apache:
     </Directory>
     <Directory d:/fmrestarter>
        Order Allow,Deny
-	   Allow from all
+       Allow from all
     </Directory>
  </VirtualHost>
 
@@ -53,14 +53,14 @@ Configure your web server, here is an example for apache:
 
 
 == Configuration
+1 Create MD5 checksum of your FM Server admin console login/password
  
-1. Create MD5 checksum of your FM Server admin console login/password
 Access index.php?act=checksum  with a webbrowser and enter your FM Server admin console login/password to generate the checksum
 Save checksum value as MD5check value in restart.ini file
 Using this checksum we check FileMaker server admin console login/password on web server's side and don't send invalid login/pass to FileMaker
  MD5check = dfc8dc2b9e0e7d93b9146d812367f035
  
-2. Configure FM Server access
+2 Configure FM Server access
 
 2.1 If you run your FileMaker server on the same server set
  fms_server = LOCAL
@@ -78,7 +78,7 @@ Server ssh host:port:
  ssh_login = admin
  ssh_password = YOUR_PASSWORD_HERE
 
-3. Configure FM local server path to fmsadmin
+3 Configure FM local server path to fmsadmin
 
 Example for MAC:
  ; Path to admin console
